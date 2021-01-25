@@ -27,10 +27,16 @@ class HomeActivity : AppCompatActivity() {
     fun callButton2(view: View?){
         val mytoast = Toast.makeText(this.applicationContext,"@plats",Toast.LENGTH_SHORT)
         mytoast.show()
+        startActivity(
+            Intent(applicationContext, Plats_Activity::class.java)
+        )
     }
     fun callButton3(view: View?){
         val mytoast = Toast.makeText(this.applicationContext,"@desserts",Toast.LENGTH_SHORT)
         mytoast.show()
+        startActivity(
+            Intent(applicationContext, Desserts_Activity::class.java)
+        )
     }
 
 
