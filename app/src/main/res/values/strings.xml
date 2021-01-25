@@ -3,5 +3,6 @@
     <string name="button">Entrée</string>
     <string name="button2">Plats</string>
     <string name="button3">Desserts</string>
+    <string name="view_button"></string>
 
 </resources>
