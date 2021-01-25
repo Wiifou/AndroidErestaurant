@@ -12,6 +12,11 @@ class HomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        Toast.makeText(this.applicationContext,"@Quit_main",Toast.LENGTH_SHORT)
+    }
+
     fun callButton(view: View?){
         val mytoast = Toast.makeText(this.applicationContext,"@entrées",Toast.LENGTH_SHORT)
         mytoast.show()
