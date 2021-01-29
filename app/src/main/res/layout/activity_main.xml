@@ -27,8 +27,7 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="380dp"
                 android:layout_marginEnd="30dp"
-                android:onClick="callButton"
-                android:text="@string/button"
+                android:onClick="callButtonEntree"
                 app:backgroundTint="#FF0000"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -41,7 +40,6 @@
                 android:layout_height="48dp"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
-                android:text="@string/button2"
                 app:backgroundTint="#FF0000"
                 app:layout_constraintBottom_toTopOf="@+id/button10"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -55,7 +53,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
-                android:text="@string/button3"
                 app:backgroundTint="#FF0000"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -75,7 +72,7 @@
                     android:id="@+id/imageView4"
                     android:layout_width="wrap_content"
                     android:layout_height="222dp"
-                    android:contentDescription="imageviewHTB"
+                    android:contentDescription="@string/imageviewhtb"
                     android:src="@drawable/maxresdefault" />
             </androidx.cardview.widget.CardView>
 

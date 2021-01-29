@@ -1,8 +1,10 @@
 <resources>
     <string name="app_name" translatable="false">AndroidErestaurant</string>
-    <string name="button" translatable="false">Entrée</string>
-    <string name="button2" translatable="false">Plats</string>
-    <string name="button3" translatable="false">Desserts</string>
+    <string name="buttonEntrées" translatable="false">Entrée</string>
+    <string name="buttonPlats" translatable="false">Plats</string>
+    <string name="buttonDesserts" translatable="false">Desserts</string>
     <string name="view_button" translatable="false">view</string>
+    <string name="element_text">element</string>
+    <string name="imageviewhtb">imageviewHTB</string>
 
 </resources>

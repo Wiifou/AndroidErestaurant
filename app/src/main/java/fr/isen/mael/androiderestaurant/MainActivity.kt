@@ -6,37 +6,38 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 
-class HomeActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        Toast.makeText(this.applicationContext,"@Quit_main",Toast.LENGTH_SHORT)
-    }
-
-    fun callButton(view: View?){
+    fun callButtonEntree(view: View?){
         val mytoast = Toast.makeText(this.applicationContext,"@entrées",Toast.LENGTH_SHORT)
         mytoast.show()
         startActivity(
-            Intent(applicationContext, Entrees_Activity::class.java)
+            Intent(applicationContext, CategoriesActivity::class.java).putExtra("title","Entrées")
         )
     }
-    fun callButton2(view: View?){
+    fun callButtonPlat(view: View?){
         val mytoast = Toast.makeText(this.applicationContext,"@plats",Toast.LENGTH_SHORT)
         mytoast.show()
         startActivity(
-            Intent(applicationContext, Plats_Activity::class.java)
+            Intent(applicationContext, CategoriesActivity::class.java).putExtra("title","Plats")
         )
     }
-    fun callButton3(view: View?){
+    fun callButtonDessert(view: View?){
         val mytoast = Toast.makeText(this.applicationContext,"@desserts",Toast.LENGTH_SHORT)
         mytoast.show()
         startActivity(
-            Intent(applicationContext, Desserts_Activity::class.java)
+            Intent(applicationContext, CategoriesActivity::class.java).putExtra("title","Desserts")
         )
+    }
+    override fun onDestroy() {
+        super.onDestroy()
+        Toast.makeText(this.applicationContext,"@Quit_main",Toast.LENGTH_SHORT)
     }
 
 
