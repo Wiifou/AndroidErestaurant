@@ -10,6 +10,10 @@
         android:id="@+id/photo"
         android:layout_width="match_parent"
         android:layout_height="200dp"
+        android:contentDescription="@string/todo"
         android:scaleType="centerCrop"
-        android:src="@drawable/android_logo_restaurant" />
+        android:src="@drawable/android_logo_restaurant"
+        app:srcCompat="@drawable/maxresdefault"
+        tools:contentDescription="Image_view"
+        tools:srcCompat="@drawable/maxresdefault" />
 </FrameLayout>

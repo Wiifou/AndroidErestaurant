@@ -1,4 +1,6 @@
 package fr.isen.mael.androiderestaurant.network
 
-class Ingredient {
-}
+import com.google.gson.annotations.SerializedName
+import java.io.Serializable
+
+class Ingredient(@SerializedName("name_fr") val name: String): Serializable {}

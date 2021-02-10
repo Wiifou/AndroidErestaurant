@@ -22,7 +22,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/android_logo_restaurant" />
+            app:srcCompat="@drawable/how_to_basic" />
 
         <TextView
             android:id="@+id/basketItemTitle"
@@ -55,7 +55,7 @@
             android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_delete" />
+            tools:srcCompat="@drawable/ic_delete" />
 
         <TextView
             android:id="@+id/basketItemQuantity"
@@ -64,7 +64,7 @@
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="8dp"
             android:text="TextView"
-            android:textColor="@color/title"
+            android:textColor="@color/red"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>

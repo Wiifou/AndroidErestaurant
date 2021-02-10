@@ -3,6 +3,7 @@ package fr.isen.mael.androiderestaurant.basket
 import android.content.Context
 
 import com.google.gson.GsonBuilder
+import fr.isen.mael.androiderestaurant.network.Dish
 import java.io.File
 import java.io.Serializable
 

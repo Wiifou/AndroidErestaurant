@@ -1,4 +1,4 @@
 package fr.isen.mael.androiderestaurant.network
 
-class MenuResult {
+class MenuResult(val data: List<Category>) {
 }

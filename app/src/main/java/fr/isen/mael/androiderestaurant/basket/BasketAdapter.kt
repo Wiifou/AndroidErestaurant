@@ -7,9 +7,10 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.isen_2021.R
-import com.example.isen_2021.databinding.BasketCellBinding
+
 import com.squareup.picasso.Picasso
+import fr.isen.mael.androiderestaurant.R
+import fr.isen.mael.androiderestaurant.databinding.BasketCellBinding
 
 
 interface BasketCellInterface {

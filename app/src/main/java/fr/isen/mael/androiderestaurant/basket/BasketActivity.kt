@@ -12,15 +12,14 @@ import androidx.appcompat.app.AlertDialog
 import com.android.volley.Request
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
-import com.example.isen_2021.HomeActivity
-import com.example.isen_2021.R
-import com.example.isen_2021.databinding.ActivityBasketBinding
-import com.example.isen_2021.detail.DetailViewFragment
-import com.example.isen_2021.network.NetworkConstant
-import com.example.isen_2021.network.RegisterResult
-import com.example.isen_2021.registration.RegisterFragment
-import com.example.isen_2021.registration.UserActivity
+
 import com.google.gson.GsonBuilder
+import fr.isen.mael.androiderestaurant.HomeActivity
+import fr.isen.mael.androiderestaurant.R
+import fr.isen.mael.androiderestaurant.databinding.ActivityBasketBinding
+import fr.isen.mael.androiderestaurant.detail.DetailViewFragment
+import fr.isen.mael.androiderestaurant.network.NetworkConstant
+import fr.isen.mael.androiderestaurant.registration.UserActivity
 import org.json.JSONObject
 
 class BasketActivity : AppCompatActivity(), BasketCellInterface {

@@ -1,4 +1,5 @@
 package fr.isen.mael.androiderestaurant.network
 
-class Price {
-}
+import java.io.Serializable
+
+class Price(val price: String): Serializable {}
