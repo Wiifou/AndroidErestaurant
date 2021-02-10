@@ -37,7 +37,7 @@ class BasketAdapter(private val basket: Basket,
             itemQuantity.text = "${context.getString(R.string.quantity)} ${item.count.toString()}"
             Picasso.get()
                     .load(item.dish.getThumbnailUrl())
-                    .placeholder(R.drawable.android_logo_restaurant)
+                    .placeholder(R.drawable.maxresdefault)
                     .into(itemImageView)
             deleteButton.setOnClickListener {
                 //delegate.onDeleteItem(item)
