@@ -3,8 +3,21 @@
     <string name="buttonEntrées" translatable="false">Entrée</string>
     <string name="buttonPlats" translatable="false">Plats</string>
     <string name="buttonDesserts" translatable="false">Desserts</string>
-    <string name="view_button" translatable="false">view</string>
-    <string name="element_text">element</string>
     <string name="imageviewhtb">imageviewHTB</string>
+    <string name="how_to_basic">How to Basic</string>
+    <string name="Basket" />
+    <string name="moins">-</string>
+    <string name="plus">+</string>
+    <string name="recipe_name">Recipe Name</string>
+    <string name="commande">commande</string>
+    <string name="price">Price</string>
+    <string name="description">Description</string>
+
+    <string name="quantit">Quantité</string>
+    <string name="nom_plat">Recipe Name</string>
+    <string name="prix">Prix</string>
+    <string name="todo">TODO</string>
+    <string name="title">Title</string>
+    <string name="PRIXX">11 €</string>
 
 </resources>

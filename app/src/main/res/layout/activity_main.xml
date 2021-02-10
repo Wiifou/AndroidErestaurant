@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#FF0000"
+    tools:context=".HomeActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,50 +23,72 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <TextView
+                android:id="@+id/mytextView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:fontFamily="monospace"
+                android:text="@string/how_to_basic"
+                android:textAlignment="center"
+                android:textColor="#FDFDFD"
+                android:textIsSelectable="false"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
             <Button
-                android:id="@+id/button8"
-                android:layout_width="0dp"
+                android:id="@+id/entree"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="380dp"
                 android:layout_marginEnd="30dp"
-                android:onClick="callButtonEntree"
-                app:backgroundTint="#FF0000"
+                android:onClick="btnMenu"
+                android:text="@string/buttonEntrées"
+                android:textColor="#FF0000"
+                app:backgroundTint="#FFFFFF"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
-                android:id="@+id/button9"
+                android:id="@+id/plat"
                 android:layout_width="0dp"
                 android:layout_height="48dp"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
-                app:backgroundTint="#FF0000"
-                app:layout_constraintBottom_toTopOf="@+id/button10"
+                android:onClick="btnMenu"
+                android:text="@string/buttonPlats"
+                android:textColor="#FF0000"
+                app:backgroundTint="#FFFFFF"
+                app:layout_constraintBottom_toTopOf="@+id/dessert"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button8" />
+                app:layout_constraintTop_toBottomOf="@+id/entree" />
 
             <Button
-                android:id="@+id/button10"
+                android:id="@+id/dessert"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
-                app:backgroundTint="#FF0000"
+                android:onClick="btnMenu"
+                android:text="@string/buttonDesserts"
+                android:textColor="#FF0000"
+                app:backgroundTint="#FDFDFD"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button9" />
+                app:layout_constraintTop_toBottomOf="@+id/plat" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
                 android:layout_marginBottom="100dp"
-                app:layout_constraintBottom_toTopOf="@+id/button8"
+                app:layout_constraintBottom_toTopOf="@+id/entree"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
@@ -78,5 +103,4 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,4 +1,4 @@
 package fr.isen.mael.androiderestaurant
 
-class DessertsListActivity {
+class BaseActivity {
 }
